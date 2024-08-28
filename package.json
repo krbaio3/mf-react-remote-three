@@ -1,0 +1,21 @@
+{
+  "name": "mf-react-remote-three",
+  "version": "1.0.0",
+  "description": "Federado numero tres",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "docker:build": "docker build -t mf-react-remote-three:1.0.0 .",
+    "docker:run": "docker run -p 3003:80 mf-react-remote-three"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.23.1",
+    "@module-federation/esbuild": "0.0.18"
+  },
+  "author": "krbaio3",
+  "license": "ISC"
+}
